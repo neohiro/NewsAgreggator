@@ -1,4 +1,8 @@
 # NewsAgreggator
+[![Python 3.x](https://img.shields.io/badge/python-3.x-blue.svg)](https://www.python.org/downloads/)
+[![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgray.svg)](https://github.com/)
+[![Build Status](https://github.com/neohiro/NewsAgreggator/actions/workflows/release.yml/badge.svg)](https://github.com/neohiro/NewsAgreggator/actions)
+
 Global News Feed with search function
 
 <img width="1196" height="829" alt="image" src="https://github.com/user-attachments/assets/30c638f4-ffda-4bfc-bb7e-b54784abe8da" />
