@@ -45,19 +45,19 @@ jobs:
         if: matrix.os == 'windows-latest'
         run: |
           pyinstaller --noconfirm --onedir --windowed --icon=icon.ico NewsAgreggator.PY
-          Compress-Archive -Path "dist\NewsAgreggator\*" -DestinationPath "NewsAgreggator-Windows.zip" -Force
+          Compress-Archive -Path "dist\NewsAgreggator" -DestinationPath "NewsAgreggator-Windows.zip" -Force
 
       - name: Build macOS Executable
         if: matrix.os == 'macos-latest'
         run: |
-          pyinstaller --noconfirm --onedir --windowed --icon=icon.ico NewsAgreggator.PY
+          pyinstaller --noconfirm --onedir --windowed --icon=icon.icns NewsAgreggator.PY
           cd dist
           zip -r ../NewsAgreggator-macOS.zip NewsAgreggator.app
 
       - name: Build Linux Executable
         if: matrix.os == 'ubuntu-latest'
         run: |
-          pyinstaller --noconfirm --onedir --windowed --icon=icon.ico NewsAgreggator.PY
+          pyinstaller --noconfirm --onedir --windowed --icon=icon.png NewsAgreggator.PY
           cd dist
           zip -r ../NewsAgreggator-Linux.zip NewsAgreggator
 
